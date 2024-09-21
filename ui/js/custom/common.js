@@ -30,34 +30,3 @@ function calculateValue() {
     });
     $("#product_grand_total").val(total.toFixed(2));
 }
-
-function orderParser(order) {
-    return {
-        id : order.id,
-        date : order.employee_name,
-        orderNo : order.employee_name,
-        customerName : order.employee_name,
-        cost : parseInt(order.employee_salary)
-    }
-}
-
-function productParser(product) {
-    return {
-        id : product.id,
-        name : product.employee_name,
-        unit : product.employee_name,
-        price : product.employee_name
-    }
-}
-
-function productDropParser(product) {
-    return {
-        id : product.id,
-        name : product.title
-    }
-}
-
-//To enable bootstrap tooltip globally
-// $(function () {
-//     $('[data-toggle="tooltip"]').tooltip()
-// });
